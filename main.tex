@@ -1,0 +1,124 @@
+\documentclass[10pt,a4paper,journal]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+% \usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{float}
+\usepackage{csquotes}
+
+\usepackage[numbers,compress]{natbib}
+
+% verbessert für die Standardschrift das Schriftbild und mach das Dokument besser leserlich. 
+% Sollte nicht für Tabellen verwendet werden.
+\usepackage{microtype}
+
+% Deutsche Tausender- und Dezimaltrennzeichen
+\usepackage{siunitx}
+
+% Paket für Verlinkungen innerhalb des Dokuments
+% Sollte als letztes eingefügt werden, da es viele LaTeX befehle überschreibt
+\usepackage{hyperref}
+\usepackage{nameref} % Damit bei einem Verweis der Name und nicht nur die Nummer angegeben wird
+
+% Paket für das Umbrechen von URL's
+% Sollte einfach aktiviert bleiben. Mit der Option [nobiblatex] werden die URL's in der Bibliography nicht umgebrochen!
+\usepackage{xurl}
+
+% Verbessert das kopieren von Text und Formeln aus PDF-Dateien
+\usepackage{mmap}
+
+%%%%%%%%%%%
+% csquotes
+% Konfiguration für die richtigen Anführunszeichen in der deutschen Sprache
+\MakeOuterQuote{"}
+
+%%%%%%%%%%
+% siunitx
+% Konfiguration der Zahlen für Tabellen für das richtige Anordnen übereinander
+% siehe: http://ctan.ebinger.cc/tex-archive/macros/latex/contrib/siunitx/siunitx.pdf
+\sisetup{
+	locale=DE,                % Einstellung der Sprache
+	round-mode=places,        % Rundet zahlen
+	round-precision=2,        % Anzahl der Nachkommastellen, die gerundet werden
+	add-integer-zero=true,    % Fügt Ganzzahlen ein Komma und Nullwerte hinten an
+	add-decimal-zero=true,    %
+	group-digits=integer,     % Gruppiert Zahlen für eine bessere Lesbarkeit
+	group-minimum-digits=4,   % Ab wwelcher Anzahl an Zahlen gruppiert werden soll
+	group-separator={.}       % Das Gruppierungszeichen in der deutschen Sprache
+}
+
+%%%%%%%%%%%
+% hyperref
+% Konfiguration für Verlinkungen innerhalb des Dokuments
+% muss hier stehen, damit die Variablen auch gesetzt sind.
+% siehe: http://ctan.mirror.norbert-ruehl.de/macros/latex/contrib/hyperref/doc/manual.pdf
+\hypersetup{
+	colorlinks,
+	hidelinks,
+	pdftitle={Gamification in der Hochschuldidaktik durch Programmierplattformen},
+	pdfauthor={Thomas Schüller},
+}
+
+% \addto\extrasngerman{%
+% 	\def\algorithmautorefname{Algorithmus}
+% }
+
+\renewcommand\IEEEkeywordsname{Schlagwörter}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+\floatname{algorithm}{Algorithmus}
+
+\title{Gamification in der Hochschuldidaktik durch Programmierplattformen}
+
+\author{\IEEEauthorblockN{Thomas Schüller}\\
+\IEEEauthorblockA{\textit{Fachbereich Informatik}\\
+\textit{Hochschule Deiner Wahl}\\
+Beispielhausen, Deutschland \\
+\href{mailto:max-mustermann@beispiel.com}{max-mustermann@beispiel.com}}
+}
+
+\maketitle
+
+\begin{abstract}
+	Kurzer Überblick über die deutsche Übersetzung von IEEEtran. Zum Teil werden einfach ein paar Features aufgelistet und zum Teil ist es einfach nur Fülltext um ein grobes Bild vom Layout zu bekommen.
+\end{abstract}
+
+\begin{IEEEkeywords}
+IEEEtran, Überblick, Typographie
+\end{IEEEkeywords}
+
+
+\section{Einleitung}
+\label{sec:Einleitung}
+Im Hochschulwesen werden häufig Paper verlangt, die im IEEE-Stil geschrieben werden sollen und zudem in deutscher Sprache verfasst werden dürfen. IEEE bietet für das Format und die Zitierung in LaTeX Vorlagen an. Diese sind allerdings nur für die englische Sprache ausgelegt und haben daher nicht die richtige Typographie und keine Deutsche Übersetzung für z.B. Monatsbezeichnungen~\cite{Schueller2023}.
+
+\section{Features}
+\label{sec:Features}
+
+\begin{enumerate}
+    \item IEEEtran Zitierweise in deutscher Übersetzung.
+    \item Verweise, bei denen man auch auf den Namen klicken kann und nicht nur auf die Zahl~\autoref{sec:Einleitung}.
+    \item Deutsche formatierung für Zahlen: \num{1000000000000,00}
+    \item Verwendung normaler, auf der Tastatur üblicher Anführungsstriche und entsprechender korrekter Formatierung. "Beispiel"
+    \item Schönerer Schriftsatz durch die Verwendung des Paketes \textit{microtype}
+    \item Ordentlich aussehende Links und Referenzen
+\end{enumerate}
+
+
+\small
+\bibliographystyle{deIEEEtran}
+\bibliography{Literatur}
+
+\end{document}
