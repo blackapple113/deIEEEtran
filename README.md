@@ -1,11 +1,11 @@
 # deIEEEtran
 IEEEtran Zitierungen für Deutsche IEEE Paper.
 
-:warning: Das Projekt kann fehlerhaft sein. :warning:
-
 :warning: Dieses Projekt ist von IEEE nicht überprüft und genehmigt. :warning:
 
 :warning: Ich übernehme keine Haftung für jegliche mit dieser Datei verursachten Schäden! :warning:
+
+Wenn möglich, sollte die Originalvorlage verwendet werden und das Paper in englischer Sprache verfasst werden. Dieses Repository ist lediglich für Personen gedacht, die keine Absicht haben, die hiermit geschriebenen Paper zu veröffentlichen.
 
 # Geschichte
 Im Hochschulwesen werden häufig Paper verlangt, die im IEEE-Stil geschrieben werden sollen und zudem in deutscher Sprache verfasst werden dürfen. IEEE bietet für das Format und die Zitierung in LaTeX Vorlagen an. Diese sind allerdings nur für die englische Sprache ausgelegt und haben daher nicht die richtige Typografie und keine deutsche Übersetzung für z.B. Monatsbezeichnungen.
