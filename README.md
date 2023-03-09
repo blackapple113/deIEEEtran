@@ -15,3 +15,4 @@ Zudem wird bei der Verwendung der [offiziell von IEEE bereitgestellten Zitations
 Um diese Fehler zu beheben habe ich eine Übersetzung von IEEEtran erstellt und möchste sie hiermit frei zur Verfügung stellen. Bei Verbesserungsvorschlägen gerne einfach Pullrequests erstellen.
 
 # Verwendung
+Alle Dateien in einen Ordner packen. Die `main.tex` ist die Hauptdatei in der schon einiges für die deutsche Sprache und einfacherere Handhabung vorkonfiguriert ist. Nähere Informationen dazu stehen direkt in `main.tex` ausführlich kommentiert.
